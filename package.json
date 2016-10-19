@@ -1,0 +1,22 @@
+{
+  "name": "confine-custom-lacona-types",
+  "version": "1.0.0",
+  "description": "Custom Confine Types used by Lacona",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laconalabs/confine-custom-lacona-types.git"
+  },
+  "author": "@brandonhorst",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/laconalabs/confine-custom-lacona-types/issues"
+  },
+  "homepage": "https://github.com/laconalabs/confine-custom-lacona-types#readme",
+  "dependencies": {
+    "lodash": "^4.16.4"
+  }
+}
