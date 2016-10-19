@@ -20,10 +20,10 @@ var key = {
 }
 
 var auth = {
-  validate (obj, schema) {
+  validate: function (obj, schema) {
     return _.isPlainObject(obj)
   },
-  validateSchema (schema) {
+  validateSchema: function (schema) {
     return _.isPlainObject(schema) && _.isString(schema.method)
   }
 }
