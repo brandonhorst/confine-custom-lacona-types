@@ -1,6 +1,6 @@
 {
   "name": "confine-custom-lacona-types",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Custom Confine Types used by Lacona",
   "main": "index.js",
   "scripts": {
