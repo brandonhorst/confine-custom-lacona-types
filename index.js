@@ -28,7 +28,39 @@ var auth = {
   }
 }
 
+var header = {
+  validate: function (obj) {
+    return _.isUndefined(obj)
+  },
+  validateSchema: function () {
+    return true
+  },
+  normalize: function () {
+    return undefined
+  },
+  clean: function () {
+    return undefined
+  }
+}
+
+var modifier = {
+  validate: function (obj) {
+    return _.isPlainObject(obj) && (
+      obj.action === 'prefix' ||
+      obj.action === 'reveal' ||
+      obj.action === 'spotlight' ||
+      obj.action === 'copy' ||
+      obj.action === 'none'
+    ) && (obj.action === 'prefix' ? _.isString(obj.prefix) : _.isUndefined(obj.prefix))
+  },
+  validateSchema: function () {
+    return true
+  }
+}
+
 module.exports = {
   key: key,
-  auth: auth
+  auth: auth,
+  header: header,
+  modifier: modifier
 }
